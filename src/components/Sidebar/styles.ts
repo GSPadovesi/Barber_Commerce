@@ -1,9 +1,23 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+interface ContainerProps {
+  isMenuOpen: boolean
+}
 
 
-export const Container = styled.aside`
+export const Container = styled.aside<ContainerProps>`
     background-color: ${(props) => props.theme.colors.green};
-    width: 7.75rem;
+    ${({ isMenuOpen }) => 
+      isMenuOpen 
+      ? css`
+        width: 16.3rem;
+      `
+      : css`
+        width: 7.75rem;
+      `
+    }
+    transition: width 0.3s;
+    /* width: 7.75rem; */
     padding: 2rem 0;
     display: flex;
     overflow: hidden;

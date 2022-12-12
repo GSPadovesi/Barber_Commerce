@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Container } from "./styles";
 import { ReactComponent as HairIcon } from "../../assets/barbearia.svg";
 import { ReactComponent as BarbaIcon } from "../../assets/barba.svg";
@@ -6,8 +7,14 @@ import { ReactComponent as TelIcon } from "../../assets/telefone.svg";
 import logo from "../../assets/menu.svg";
 
 export function Sidebar(){
-    return <Container>
-            <button type="button">
+    const [menuOpen, setMenuOpen] = useState(false);
+    const handleToggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    }
+
+    return( 
+        <Container isMenuOpen={menuOpen}>
+            <button type="button" onClick={handleToggleMenu}>
                 <img src={logo} alt="Abrir e fechar sidebar" />
             </button>
             <nav>
@@ -39,4 +46,5 @@ export function Sidebar(){
                 </ul>
             </nav>
         </Container>
+    )
 }
