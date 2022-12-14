@@ -1,5 +1,11 @@
-
+import { Head } from "../../../components/Head"
+import { SnackTitle } from "../../../components/SnackTitle"
 
 export default function Beard(){
-    return <h1>Barba</h1>
+    return(
+        <>
+            <Head title="Barba" description="Página de Barba" />
+            <SnackTitle>Barba</SnackTitle>
+        </>
+    )
 }
