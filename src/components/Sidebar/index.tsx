@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { Container } from "./styles";
 import { ReactComponent as HairIcon } from "../../assets/barbearia.svg";
 import { ReactComponent as BarbaIcon } from "../../assets/barba.svg";
@@ -20,28 +21,28 @@ export function Sidebar(){
             <nav>
                 <ul>
                     <li>
-                        <a href="#" className="active">
+                        <NavLink to="/" >
                             <HairIcon />
                             <span>Cabelo</span>
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <NavLink to="beard">
                             <BarbaIcon />
                             <span>Barba</span>
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <NavLink to="eyebrow">
                             <SobrancelhaIcon />
-                            <span>Barba</span>
-                        </a>
+                            <span>Sobrancelhas</span>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <NavLink to="contact">
                             <TelIcon />
                             <span>Contatos</span>
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
