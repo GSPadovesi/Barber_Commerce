@@ -3,7 +3,7 @@ import { darken } from "polished";
 
 export const Container = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
     gap: 1.75rem;
 
     @media (max-width: 500px){
@@ -72,11 +72,40 @@ export const Container = styled.div`
         }
     }
 }
-@media (max-width: 1066px){
+    @media (max-width: 1066px){
        .snack{
         img{
             object-fit: cover;
         }
        }
     }
+
+    
 `;
+
+ export const SearchContainer = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    input{
+        position: relative;
+        width: 30%;
+        height: 2rem;
+        border: none;
+        border-radius: 4px;
+        padding: 0 1rem;
+        margin-bottom: 20px;
+    }
+
+    p{
+        svg{
+            stroke: ${({theme}) => theme.colors.gray300};
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-bottom: 15px;
+        }
+    }
+
+
+ `
