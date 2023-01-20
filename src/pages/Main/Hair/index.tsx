@@ -41,7 +41,7 @@ export default function Hair(){
             image: 'https://i.imgur.com/Wxlq7WH.png'
         }
     ]
-    
+    console.log(data)
     return(
         <>
             <Head title="Cabelo" description="Página de Cabelo" />
