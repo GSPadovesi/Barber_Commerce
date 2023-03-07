@@ -3,35 +3,35 @@
         {
            "id":"1",            
            "name":"Corte Disfarçado Curto",
-            "price":"R$ 150,00",
+            "price":150.0,
             "description": "Corte de cabelo disfarçado com dois risquinhos atrás para chamar a atenção, com um corte de cabelo desses você não vai querer guerra com ninguem mais. Venha pra Hair Commerce",
             "image": "https://i.imgur.com/fmvhB8r.jpeg"
         },
         {
             "id":"2",
-            "name":"Corte Disfarçado Curto",
-            "price":"R$ 50,00",
+            "name":"Corte Disfarçado Longo",
+            "price":200.0,
             "description": "Corte de cabelo disfarçado com o cabelo jogado pra trás para deixar o cabelo mais estiloso, com um corte de cabelo desses você não vai querer guerra com ninguem mais. Venha pra Hair Commerce",
             "image": "https://i.imgur.com/RTRsXFV.jpeg"
         },
         {
             "id":"3",
             "name":"Gel de cabelo L.A LOOKS - 100g",
-            "price":"R$ 80,00",
+            "price":80.0,
             "description":"Gel de cabelo L.A LOOKS - 100g, feito para cabelos estilosos",
             "image": "https://i.imgur.com/d4kEO.jpeg"
         },
         {
             "id":"4",
             "name":"Pomada de cabelo ForteBerry - 120g",
-            "price":"R$ 150,00",
+            "price":150.0,
             "description":"Pomada de cabelo ForteBerry - 120g, feito para cabelos estilosos",
             "image": "https://i.imgur.com/aSuIktV.jpeg"
         },
         {
             "id":"5",
             "name":"Creme de cabelo Neon &CO. - 250g",
-            "price":"R$ 200,00",
+            "price":200.0,
             "description":"Creme de cabelo Neon &CO. - 250g, feito para cabelos quebrados, oliosos e com caspa",
             "image": "https://i.imgur.com/Wxlq7WH.png"
         }
@@ -42,7 +42,7 @@
         {
             "id":"1",
             "name":"Desenho Barba Profissional",
-            "price":"R$ 150,00",
+            "price":150.0,
             "description":"Que tal começar o dia com a barba desenhada, com um desenho profissional você vai arrasar no trabalho e na balada. Venha pra Hair Commerce",
             "image": "https://i.imgur.com/uNo9D79.jpeg"
 
@@ -50,14 +50,14 @@
         {
             "id":"2",           
             "name":"Barba Profissional",
-            "price":"R$ 50,00",
+            "price":50.0,
             "description":"Se até o Luke Skywalker tem uma barba profissional, porque você não teria? Venha arrassar da mesma forma que o Luke arrasou contra o império, venha pra Hair Commerce",
             "image": "https://i.imgur.com/b5AEcKf.jpeg"
         },
         {
             "id": "3",
             "name": "Barba estilo Jack Sparrow",
-            "price": "R$ 200,00",
+            "price": 200.0,
             "description": "Barba estilo Jack Sparrow, com um corte de cabelo e barba desse você vai arrasar na balada, venha pra Hair Commerce",
             "image": "https://i.imgur.com/XfJixDl.jpeg"
         }
@@ -67,14 +67,14 @@
         {
             "id": "1",
             "name": "Sobrancelha Profissional",
-            "price": "R$ 25,00",
+            "price": 25.0,
             "description": "Sobrancelha profissional para você arrasar no trabalho e na balada, venha pra Hair Commerce",
             "image": "https://i.imgur.com/zokSPd2.png"
         },
         {
             "id": "2",
             "name": "Sombrancelha cheia",
-            "price": "R$ 50,00",
+            "price": 50.0,
             "description": "Sobrancelha cheia para você arrasar no trabalho e na balada, venha pra Hair Commerce",
             "image": "https://i.imgur.com/lTFIDML.jpeg"
         }
