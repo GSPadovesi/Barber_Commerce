@@ -2,6 +2,7 @@ import { Container, SearchContainer } from './styles';
 import { FiPlus, FiSearch } from 'react-icons/fi';
 import { useState } from 'react';
 import { moneyFormat } from '../../helpers/moneyFormat';
+import { SkeletonSnacks } from './SkeletonSnacks';
 
 interface SnacksProps{
     snacks: any[]
@@ -22,7 +23,7 @@ export function Snacks({snacks}: SnacksProps){
                 <p><FiSearch /></p>
             </SearchContainer>
             <Container>
-                {!snacks.length ? ( <h2 style={{ color: '#fff' }}>Loading...</h2> ) :
+                {!snacks.length ? [1,2,3,4].map((n) => <SkeletonSnacks key={n} />) :
                     ( filter.map((snack) => (
                     <div key={snack.id} className='snack'>
                         <h2>{snack.name}</h2>
