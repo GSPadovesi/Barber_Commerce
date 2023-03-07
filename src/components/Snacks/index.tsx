@@ -22,7 +22,8 @@ export function Snacks({snacks}: SnacksProps){
                 <p><FiSearch /></p>
             </SearchContainer>
             <Container>
-                {filter.map((snack) => (
+                {!snacks.length ? ( <h2 style={{ color: '#fff' }}>Loading...</h2> ) :
+                    ( filter.map((snack) => (
                     <div key={snack.id} className='snack'>
                         <h2>{snack.name}</h2>
                         <img src={snack.image} alt={snack.name} />
@@ -32,7 +33,7 @@ export function Snacks({snacks}: SnacksProps){
                             <button type='button'><FiPlus /></button>
                         </div>
                     </div>
-                ))}
+                )))}
             </Container>
         </>
     )

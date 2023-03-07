@@ -14,6 +14,7 @@ export default function Beard(){
             setBeard(response.data)
         })()
     }, [])
+    
     return(
         <>
             <Head title="Barba" description="Página de Barba" />

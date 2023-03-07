@@ -53,7 +53,14 @@
             "price":"R$ 50,00",
             "description":"Se até o Luke Skywalker tem uma barba profissional, porque você não teria? Venha arrassar da mesma forma que o Luke arrasou contra o império, venha pra Hair Commerce",
             "image": "https://i.imgur.com/b5AEcKf.jpeg"
-        } 
+        },
+        {
+            "id": "3",
+            "name": "Barba estilo Jack Sparrow",
+            "price": "R$ 200,00",
+            "description": "Barba estilo Jack Sparrow, com um corte de cabelo e barba desse você vai arrasar na balada, venha pra Hair Commerce",
+            "image": "https://i.imgur.com/XfJixDl.jpeg"
+        }
     ],
     
     "eyebrow": [
@@ -63,6 +70,13 @@
             "price": "R$ 25,00",
             "description": "Sobrancelha profissional para você arrasar no trabalho e na balada, venha pra Hair Commerce",
             "image": "https://i.imgur.com/zokSPd2.png"
+        },
+        {
+            "id": "2",
+            "name": "Sombrancelha cheia",
+            "price": "R$ 50,00",
+            "description": "Sobrancelha cheia para você arrasar no trabalho e na balada, venha pra Hair Commerce",
+            "image": "https://i.imgur.com/lTFIDML.jpeg"
         }
 
     ]
