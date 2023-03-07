@@ -4,9 +4,10 @@ import { Snacks } from "../../../components/Snacks"
 import { dataBeard } from "../../../utils/dadosBeard"
 import { useEffect, useState } from "react"
 import { getBeard } from "../../../services/api"
+import { SnackData } from "../../../interfaces/SnackData"
 
 export default function Beard(){
-    const [beard, setBeard] = useState([])
+    const [beard, setBeard] = useState<SnackData[]>([])
 
     useEffect(() => {
         (async () => {

@@ -3,9 +3,10 @@ import { FiPlus, FiSearch } from 'react-icons/fi';
 import { useState } from 'react';
 import { moneyFormat } from '../../helpers/moneyFormat';
 import { SkeletonSnacks } from './SkeletonSnacks';
+import { SnackData } from '../../interfaces/SnackData';
 
 interface SnacksProps{
-    snacks: any[]
+    snacks: SnackData[]
 }
 
 export function Snacks({snacks}: SnacksProps){

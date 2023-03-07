@@ -3,10 +3,11 @@ import { SnackTitle } from "../../../components/SnackTitle"
 import { Snacks } from "../../../components/Snacks"
 import { useEffect, useState } from "react"
 import { getHair } from "../../../services/api"
+import { SnackData } from "../../../interfaces/SnackData"
  
 export default function Hair(){
 
-  const [hair, setHair] = useState([])
+  const [hair, setHair] = useState<SnackData[]>([])
   
   useEffect(() => {
     (async () => {
