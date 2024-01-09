@@ -1,15 +1,12 @@
 import { Head } from "../../../components/Head"
 import { SnackTitle } from "../../../components/SnackTitle"
 import { Snacks } from "../../../components/Snacks"
-import { snackContext } from "../../../App"
-import { dataBeard } from "../../../utils/dadosBeard"
 import { useContext, useEffect, useState } from "react"
-import { getBeard } from "../../../services/api"
-import { SnackData } from "../../../interfaces/SnackData"
+import { SnackContext } from "../../../context/snackContext/snackContext"
 
 export default function Beard() {
 
-    const { beard } = useContext(snackContext)
+    const { beard } = useContext(SnackContext)
 
     return (
         <>
