@@ -1,29 +1,21 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { Head } from "../../../components/Head"
 import { Snacks } from "../../../components/Snacks"
 import { SnackTitle } from "../../../components/SnackTitle"
 import { SnackData } from "../../../interfaces/SnackData"
 import { getEyebrow } from "../../../services/api"
+import { snackContext } from "../../../App"
 
 
-export default function Eyebrow(){
-    
-    const[eye, setEye] = useState<SnackData[]>([])
+export default function Eyebrow() {
 
-    useEffect(() => {
-        (async () => {
-            const response = await getEyebrow()
-            setEye(response.data)
-        })()
-    })
+    const { eyebrow } = useContext(snackContext)
 
-    console.log(eye)
-
-    return(
+    return (
         <>
             <Head title="Sobrancelha" description="Página de Sobrancelha" />
             <SnackTitle>Sobrancelha</SnackTitle>
-            <Snacks snacks={eye} />
+            <Snacks snacks={eyebrow} />
         </>
     )
 }
