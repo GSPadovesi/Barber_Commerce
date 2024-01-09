@@ -1,11 +1,8 @@
+import { SkeletonProps } from '../../interfaces/skeleton.types';
 import { SkeletonElement } from './styles'
 
-export interface SkeletonProps {
-    type: "title" | "text" | "thumbnail" | "image";
-}
-
-export function Skeleton({ type }: SkeletonProps){
-    return(
+export function Skeleton({ type }: SkeletonProps) {
+    return (
         <>
             <SkeletonElement type={type} />
         </>

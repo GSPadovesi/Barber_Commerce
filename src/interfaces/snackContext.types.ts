@@ -1,4 +1,4 @@
-import { SnackData } from "../../interfaces/SnackData";
+import { SnackData } from "./SnackData";
 
 export interface SnackContentProps {
   beard: SnackData[];

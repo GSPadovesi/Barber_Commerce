@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react'
-import { SnackContentProps, SnackProvidersProps } from './snackContext.types'
+import { SnackContentProps, SnackProvidersProps } from '../../interfaces/snackContext.types'
 import { SnackData } from '../../interfaces/SnackData'
 import { getBeard, getEyebrow, getHair } from '../../services/api'
 

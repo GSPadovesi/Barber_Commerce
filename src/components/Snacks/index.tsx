@@ -3,19 +3,12 @@ import { FiPlus, FiSearch } from 'react-icons/fi';
 import { useState } from 'react';
 import { moneyFormat } from '../../helpers/moneyFormat';
 import { SkeletonSnacks } from './SkeletonSnacks';
-import { SnackData } from '../../interfaces/SnackData';
-
-interface SnacksProps {
-    snacks: SnackData[]
-}
+import { SnacksProps } from '../../interfaces/snacks.types';
 
 export function Snacks({ snacks }: SnacksProps) {
 
     const [search, setSearch] = useState('');
-
     const filter = snacks.filter((snack) => snack.name.toLowerCase().includes(search.toLowerCase()));
-    console.log(search, '-', snacks)
-
 
     return (
         <>
