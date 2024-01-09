@@ -1,12 +1,11 @@
 import { Head } from "../../../components/Head"
 import { SnackTitle } from "../../../components/SnackTitle"
 import { Snacks } from "../../../components/Snacks"
-import { useContext } from "react"
-import { SnackContext } from "../../../context/snackContext/snackContext"
+import { useSnacks } from "../../../hooks/useSnacks"
 
 export default function Hair() {
 
-  const { hair } = useContext(SnackContext)
+  const { hair } = useSnacks();
 
   return (
     <>

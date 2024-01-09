@@ -1,14 +1,13 @@
-import { useContext } from "react"
 import { Head } from "../../../components/Head"
 import { Snacks } from "../../../components/Snacks"
 import { SnackTitle } from "../../../components/SnackTitle"
-import { SnackContext } from "../../../context/snackContext/snackContext"
+import { useSnacks } from "../../../hooks/useSnacks"
 
 
 
 export default function Eyebrow() {
 
-    const { eyebrow } = useContext(SnackContext)
+    const { eyebrow } = useSnacks();
 
     return (
         <>
